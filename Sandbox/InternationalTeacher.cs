@@ -15,5 +15,14 @@ namespace Sandbox
             Language = language;
         }
 
+        public override int CalculateSalary()
+        {
+            return base.CalculateSalary() + 2000;
+        }
+
+        public override string GetTitle()
+        {
+            return "International Teacher";
+        }
     }
 }

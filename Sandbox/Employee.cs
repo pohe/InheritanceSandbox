@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sandbox
 {
-    public class Employee
+    public abstract class Employee
     {
         public string Name { get; set; }
         public int Id { get; set; }
@@ -26,10 +26,14 @@ namespace Sandbox
             Id = id;
         }
 
+        
+
         public virtual int CalculateSalary()
         {
             return 10000;
         }
+
+        public abstract string GetTitle();
 
     }
 }

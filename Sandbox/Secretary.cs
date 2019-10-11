@@ -23,5 +23,10 @@ namespace Sandbox
                 return base.CalculateSalary();
             }
         }
+
+        public override string GetTitle()
+        {
+            return "Secretary";
+        }
     }
 }
